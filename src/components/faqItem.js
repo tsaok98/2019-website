@@ -6,13 +6,13 @@ import React from 'react';
 const FAQItem = ({ question, answer }) => {
 	return (
 		<div>
-			<div class="faq-item noselect"> </div>
-			<div class="question">
-				<div class="arrow-wrapper">{/* <img src="~assets/img/arrow.svg"></img> */}</div>
-				<h4 class="title">{question}</h4>
+			<div className="faq-item noselect"> </div>
+			<div className="question">
+				<div className="arrow-wrapper">{/* <img src="~assets/img/arrow.svg"></img> */}</div>
+				<h4 className="title">{question}</h4>
 			</div>
 			{/* <transition name="slide-fade"> */}
-			<div v-if="open" class="answer">
+			<div  className="answer">
 				{answer}
 			</div>
 			{/* </transition> */}

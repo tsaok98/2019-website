@@ -2,6 +2,8 @@ import React from 'react';
 // import { Link } from 'gatsby';
 
 import '../components/layout.css';
+import styled from 'styled-components';
+
 
 import SEO from '../components/seo';
 
@@ -9,9 +11,18 @@ import Welcome from '../components/welcome';
 import FAQ from '../components/faq';
 import Schedule from '../components/schedule';
 import SponsorBox from '../components/sponsorBox';
+import BGI from '../images/Website Layout.png';
+
+let Container = styled.div `
+	width: 100%;
+	background-size: cover;
+	height: auto;
+	background-image: url(${'https://shared.benc.io/screencaps/2019/09/Website_Layout.opt.png'});
+	overflow: scroll;
+`;
 
 const IndexPage = () => (
-	<div>
+	<Container>
 		<SEO title="" />
 		{
 			// insert VH logo
@@ -26,7 +37,8 @@ const IndexPage = () => (
 		<Schedule></Schedule>
 
 		<SponsorBox></SponsorBox>
-	</div>
+		<br></br><br></br><br></br><br></br><br></br><br></br><br></br><br></br><br></br><br></br><br></br><br></br><br></br><br></br><br></br><br></br>
+	</Container>
 );
 
 export default IndexPage;
